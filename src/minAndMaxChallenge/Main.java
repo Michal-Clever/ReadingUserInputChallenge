@@ -8,20 +8,33 @@ public class Main {
 
         int min = 0;
         int max = 0;
+        boolean first = true;
 
-        while(true){
+        while (true) {
             System.out.println("Enter number: ");
             boolean isAnInt = scanner.hasNextInt();
 
-            if(isAnInt){
+            if (isAnInt) {
+                int number = scanner.nextInt();
+                if(first){
+                    first = false;
+                    min = number;
+                    max = number;
+                }
 
-            }else{
-                
+                if (number > max) {
+                    max = number;
+                }
+                if (number < min) {
+                    min = number;
+                }
+            } else {
+                break;
             }
-
+            scanner.nextLine();
 
         }
-
+        System.out.println("min = " + min + ", max = " + max);
         scanner.close();
     }
 }
