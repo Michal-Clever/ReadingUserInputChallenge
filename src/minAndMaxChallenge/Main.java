@@ -10,7 +10,6 @@ public class Main {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
       //  boolean first = true;
-
         while (true) {
             System.out.println("Enter number: ");
             boolean isAnInt = scanner.hasNextInt();
