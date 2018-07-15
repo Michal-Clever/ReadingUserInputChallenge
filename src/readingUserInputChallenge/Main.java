@@ -8,7 +8,7 @@ public class Main {
         int counter = 0;
         int sum = 0;
 
-        
+
      //   while(true) {
         while (counter < 10){
             int order = counter + 1;

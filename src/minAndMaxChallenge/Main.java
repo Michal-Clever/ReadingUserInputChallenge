@@ -12,7 +12,7 @@ public class Main {
         int max = Integer.MIN_VALUE;
       //  boolean first = true;
         while (true) {
-            System.out.println("Enter number: ");
+            System.out.println("Enter number( or letter to finish the task ):");
             boolean isAnInt = scanner.hasNextInt();
 
             if (isAnInt) {
